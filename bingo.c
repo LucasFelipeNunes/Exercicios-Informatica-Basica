@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<locale.h>
 #include<time.h>
-main(){
+int main(void){
 	setlocale(LC_ALL, "portuguese");
 	srand(time(NULL));
 	int numerocartelas, x = 0, y[75], auxiliar, status;
@@ -86,4 +86,5 @@ main(){
 			}
 		}
 	}
+	return 0;
 }

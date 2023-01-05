@@ -3,7 +3,7 @@
 #include<locale.h>
 #include<time.h>
 #include<unistd.h>
-main(){
+int main(void){
 	setlocale(LC_ALL, "portuguese");
 	int linha[3], coluna[3], aux[4], contador = 0, produto = 1, pontos1 = 0, pontos2 = 0, jogadores;
 	printf("JOGO DA MEMORIA\n\nEscolha o número de jogadores (1 ou 2): ");

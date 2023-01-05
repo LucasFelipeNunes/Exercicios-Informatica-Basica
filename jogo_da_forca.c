@@ -1,6 +1,6 @@
 #include<stdlib.h>
 #include<stdio.h>
-main(){
+int main(void){
 	char dica[46], chute[26], errow[26];
 	int letras, status;
 	for(int i = 0;i < 26;i++){

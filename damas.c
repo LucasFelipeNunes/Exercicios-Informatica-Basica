@@ -1,9 +1,9 @@
 #include<stdlib.h>
 #include<stdio.h>
 #include<locale.h>
-main(){
+int main(){
 	setlocale(LC_ALL, "portuguese");
-	int jogadas = 0, linha[2], coluna[2], status, contador = 0, checao, checaO, aux, movspossiveis[4];
+	int jogadas = 0, linha[2], coluna[2], status, contador = 0, checao, checaO, aux, movspossiveis[4], verdadeiro = 1;
 	char tabuleiro[8][8];
 	printf("DAMAS\n\n");
 	for(int i = 0;i < 8;i++){
@@ -19,7 +19,7 @@ main(){
 			}
 		}
 	}
-	while(true){
+	while(verdadeiro){
 		jogadas++;
 		printf("    1   2   3   4   5   6   7   8\n   _______________________________");
 		for(int i = 0;i < 8;i++){

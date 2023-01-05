@@ -3,8 +3,8 @@
 #include<unistd.h>
 #include<locale.h>
 #include<time.h>
-main(){
-	int numeroex;
+int main(){
+	int numeroex, verdadeiro = 1;
 	setlocale(LC_ALL, "portuguese");
 	printf("EXERCÍCIOS DE INFORMÁTICA\n");
 	printf("Escolha o numero do exercício: ");
@@ -222,7 +222,7 @@ main(){
 			setlocale(LC_ALL, "portuguese");
 			int escolha;
 			float saque, deposito, saldo, saquetotal, depositototal;
-			while(true){
+			while(verdadeiro){
 				printf("CAIXA ELETRÔNICO - ELETRO INC.");
 				printf("\n\nO que você deseja fazer?\n1. Saque\n2. Depósito\n3. Consultar Saldo\n4. Sair\nDigite aqui: ");
 				scanf("%d", &escolha);

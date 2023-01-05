@@ -6,7 +6,7 @@ main(){
 	system("color F0");
 	setlocale(LC_ALL, "portuguese");
 	srand(time(NULL));
-	int numero, linha, coluna, sudoku[9][9], status = 0, a, b, c, d, x[9], y;
+	int verdadeiro = 1, numero, linha, coluna, sudoku[9][9], status = 0, a, b, c, d, x[9], y;
 	for(int i = 0;i < 9;i++){
 		do{
 			status = 1;
@@ -37,7 +37,7 @@ main(){
 		}
 	}
 	printf("SUDOKU\n\n");
-	while(true){
+	while(verdadeiro){
 		status = 0;
 		printf("    1   2   3   4   5   6   7   8   9\n  -------------------------------------\n");
 		for(int i = 0;i < 9;i++){
